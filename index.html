@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perritos Saludables - Solicitar Servicio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>🐾 Perritos Saludables 🐾</h1>
+    <p>¡Cuida de la salud de tu perrito con nuestros servicios de desparacitación y vitaminas!</p>
+  </header>
+
+  <main>
+    <form id="serviceForm">
+      <h2>Solicita un Servicio</h2>
+
+      <div class="form-group">
+        <label for="ownerName">Nombre del Propietario</label>
+        <input type="text" id="ownerName" required placeholder="Tu nombre">
+      </div>
+
+      <div class="form-group">
+        <label for="dogName">Nombre del Perrito</label>
+        <input type="text" id="dogName" required placeholder="Nombre de tu perrito">
+      </div>
+
+      <div class="form-group">
+        <label for="service">Servicio Necesario</label>
+        <select id="service" required>
+          <option value="Desparacitación">Desparacitación</option>
+          <option value="Vitaminas">Vitaminas</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Número de Teléfono</label>
+        <input type="tel" id="phone" required placeholder="Tu teléfono">
+      </div>
+
+      <button type="submit" class="btn">Enviar Solicitud a WhatsApp</button>
+    </form>
+
+    <div id="successMessage"></div>
+  </main>
+
+  <footer>
+    <p>🐶 ¡Gracias por confiar en nosotros para el cuidado de tu perrito! 🐾</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
